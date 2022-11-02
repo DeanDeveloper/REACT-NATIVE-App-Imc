@@ -1,16 +1,22 @@
 import React from 'react';
 import { StyleSheet, View , Text } from 'react-native';
+import { RFPercentage } from 'react-native-responsive-fontsize';
 
 export default Title = () => {
     return (
-        <View>
-            <Text style={styles.text}>Bit Health</Text>
+        <View style={styles.boxTitle}>
+            <Text style={styles.title}>Calculadora IMC</Text>
         </View>
     )
 }
 
 const styles = StyleSheet.create({
-    text : {
-        fontSize: 32
+
+    boxTitle : {
+        marginTop: 30
+    },  
+
+    title : {
+        fontSize: RFPercentage(3),
     }
 })
